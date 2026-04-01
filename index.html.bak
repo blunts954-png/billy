@@ -10,15 +10,13 @@
   <meta property="og:title" content="Bakersfield Real Estate Photography | William Dean Photography" />
   <meta property="og:description" content="Technically clean, emotionally dialed listing visuals for Bakersfield agents who want consistency—not random shoots." />
   <meta property="og:type" content="website" />
-    <meta property="og:image" content="william_dean_logo.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="William Dean Photography | Bakersfield Real Estate Photography" />
-    <meta name="twitter:description" content="Fast turnaround. Zero friction. Market-ready listing visuals for Bakersfield & Kern County agents." />
-    <meta name="twitter:image" content="william_dean_logo.png" />
-    <link rel="canonical" href="/" />
-    <link rel="preload" href="william_dean_logo.png" as="image" />
-    <link rel="icon" href="william_dean_logo.png" type="image/png" />
-    <link rel="apple-touch-icon" href="william_dean_logo.png" />
+  <meta property="og:image" content="billylogo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="William Dean Photography | Bakersfield Real Estate Photography" />
+  <meta name="twitter:description" content="Fast turnaround. Zero friction. Market-ready listing visuals for Bakersfield & Kern County agents." />
+  <meta name="twitter:image" content="billylogo.jpg" />
+  <link rel="canonical" href="/" />
+  <link rel="preload" href="billylogo.jpg" as="image" />
   <meta name="geo.region" content="US-CA" />
   <meta name="geo.placename" content="Bakersfield" />
   <meta name="geo.position" content="35.3733,-119.0187" />
@@ -28,7 +26,7 @@
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "William Dean Photography",
-    "image": "https://williamdeanphotography.com/william_dean_logo.png",
+    "image": "https://williamdeanphotography.com/billylogo.jpg",
     "description": "Real estate photographer in Bakersfield & Kern County delivering clean, fast, MLS-compliant listing photos, twilight edits, and AI-enhanced marketing visuals.",
     "url": "https://williamdeanphotography.com/",
     "telephone": "+1-865-364-0099",
@@ -46,37 +44,25 @@
       "longitude": -119.0187
     },
     "areaServed": [
-      { "@type": "City", "name": "Bakersfield" },
-      { "@type": "AdministrativeArea", "name": "Kern County" }
+      {
+        "@type": "City",
+        "name": "Bakersfield"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Kern County"
+      }
     ],
     "serviceType": [
       "Residential Real Estate Photography",
       "Commercial Real Estate Photography",
-      "MLS-Compliant Listing Photography"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What areas do you serve for real estate photography?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I serve Bakersfield and greater Kern County, including Rosedale, Oildale, Shafter, Wasco, and Delano."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How fast is your turnaround on listing photos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most Bakersfield real estate photo shoots are delivered within 24-48 hours after the session."
-        }
-      }
+      "MLS-Compliant Listing Photography",
+      "Twilight Edits",
+      "AI Staged Photos",
+      "AI Walk-Through Videos"
+    ],
+    "sameAs": [
+      "https://instagram.com/williamdeanrealphotography"
     ]
   }
   </script>
@@ -106,45 +92,45 @@
     .btn-ghost:hover{background:rgba(255,255,255,.06)}
     header{
       position:sticky;top:0;z-index:20;backdrop-filter:blur(15px);
-      background:rgba(15,17,21,.85);border-bottom:1px solid var(--line);
-      box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+      background:rgba(15,17,21,.85);border-bottom:1px solid var(--line)
     }
-    .nav{
-      display:flex;justify-content:space-between;align-items:center;padding:12px 0; gap: 40px
+    .nav-grid{
+      display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:12px 0
     }
-    .brand { flex: 1; display: flex; align-items: center; justify-content: flex-start; min-width: 280px; }
-    .brand img{height:140px;width:auto;display:block;filter:drop-shadow(0 4px 15px rgba(0,0,0,0.5));transition:all .4s cubic-bezier(0.4, 0, 0.2, 1)}
-    .brand img:hover{transform:scale(1.06)}
-    .header-center{flex: 0 0 auto; display:flex;align-items:center;gap:20px;justify-content:center; text-align: center}
-    .header-right{flex: 1; display:flex;justify-content:flex-end; align-items:center; gap:12px; min-width: 250px}
-    .chat-trigger {
-      display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--muted); font-size: 0.9rem; transition: 0.3s;
+    .header-center{display:flex;align-items:center;gap:20px;justify-content:center}
+    .header-right{display:flex;justify-content:flex-end}
+    .nav-phone{font-weight:800;color:var(--accent);font-size:1.25rem;letter-spacing:0.5px}
+    .chat-trigger{
+      background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--text);
+      padding:10px 18px;border-radius:999px;font-weight:700;cursor:pointer;transition:.2s;
+      display:flex;align-items:center;gap:8px;font-size:0.95rem
     }
-    .chat-trigger:hover { color: var(--accent); }
-    .chat-icon {
-      width: 42px; height: 42px; background: rgba(215,178,109,0.1); border: 1px solid var(--accent);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      transition: 0.3s;
-    }
-    .chat-trigger:hover .chat-icon { transform: scale(1.1); background: var(--accent); color: #111; }
-    .nav-phone{font-weight:900;color:var(--accent);font-size:1.4rem;letter-spacing:0.5px;text-shadow:0 0 15px rgba(215,178,109,0.3)}
+    .chat-trigger:hover{background:rgba(255,255,255,.1);border-color:var(--accent)}
     .hero{
       position:relative;
       overflow:hidden;
-      padding:70px 0 50px;
-      background:
-        linear-gradient(to bottom, rgba(0,0,0,.48), rgba(0,0,0,.75));
-      min-height:82vh;display:flex;align-items:flex-end
+      padding:20px 0 60px; /* Tighter gap to header */
+      background:#000;
+      min-height:85vh;display:flex;justify-content:center;align-items:flex-start
+    }
+    .hero-bg{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;
+      animation:heroZoom 30s ease-in-out infinite alternate;
+      opacity:0.75;
+    }
+    @keyframes heroZoom {
+      0% { transform: scale(1); filter: brightness(0.6) saturate(1); }
+      100% { transform: scale(1.15); filter: brightness(0.65) saturate(1.1); }
     }
     .hero::before{
       content:"";
       position:absolute;inset:0;
       background:
-        radial-gradient(circle at 20% 30%, rgba(255,255,255,.08) 0 2px, transparent 3px),
-        radial-gradient(circle at 78% 18%, rgba(215,178,109,.08) 0 2px, transparent 3px),
-        radial-gradient(circle at 65% 62%, rgba(255,255,255,.05) 0 2px, transparent 3px),
-        radial-gradient(circle at 33% 74%, rgba(215,178,109,.05) 0 2px, transparent 3px),
-        radial-gradient(circle at 88% 72%, rgba(255,255,255,.03) 0 2px, transparent 3px);
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,.28) 0 2px, transparent 3px),
+        radial-gradient(circle at 78% 18%, rgba(215,178,109,.28) 0 2px, transparent 3px),
+        radial-gradient(circle at 65% 62%, rgba(255,255,255,.2) 0 2px, transparent 3px),
+        radial-gradient(circle at 33% 74%, rgba(215,178,109,.2) 0 2px, transparent 3px),
+        radial-gradient(circle at 88% 72%, rgba(255,255,255,.16) 0 2px, transparent 3px);
       background-size:220px 220px,260px 260px,300px 300px,240px 240px,340px 340px;
       animation:floatStars 18s linear infinite;
       opacity:.7;
@@ -166,14 +152,16 @@
     .hero-card{
       position:relative;z-index:2;text-align:center;
       width:min(800px,100%);background:rgba(15,17,21,.72);border:1px solid var(--line);
-      border-radius:24px;padding:45px;box-shadow:0 30px 60px rgba(0,0,0,.5);
-      backdrop-filter:blur(10px);margin-bottom: 20px;
+      border-radius:24px;padding:40px;box-shadow:0 30px 60px rgba(0,0,0,.5);
+      backdrop-filter:blur(10px)
     }
-    .hero-logo-main {
-      width: 280px; margin: 0 auto 30px; display: block;
-      filter: drop-shadow(0 0 30px rgba(215,178,109,0.2));
+    .hero-logo{
+      width:220px; /* Slightly punchier logo size */
+      margin-bottom:30px;
+      filter: drop-shadow(0 0 40px rgba(215,178,109,0.25)) drop-shadow(0 15px 30px rgba(0,0,0,.8));
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;opacity:0.65}
+    .hero-card:hover .hero-logo { transform: scale(1.03) translateY(-5px); }
     h1{font-size:clamp(2rem,4vw,3.4rem);line-height:1.1;margin:0 0 14px}
     .lead{font-size:1.1rem;color:var(--muted);line-height:1.65;margin:0 0 24px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap}
@@ -231,24 +219,9 @@
       .gallery{grid-template-columns:repeat(2,1fr)}
       .proof,.process,.bio-grid{grid-template-columns:1fr}
       .hero{min-height:72vh}
-      .nav{flex-direction:column; gap:15px; text-align:center}
-      .header-center{flex-direction:column; gap:10px}
-      .header-right{display:none}
-      .brand img{margin:0 auto; height:80px !important}
-      .hero-card{padding:30px 20px; margin-top:20px}
     }
     @media (max-width:560px){
-      .gallery{grid-template-columns:1fr}
-      .gallery img{height:auto; aspect-ratio:3/2}
-      .nav-phone{font-size:1.2rem}
-      .btn-primary{padding:12px 20px; font-size:1rem}
-      .floating-ctas{right:15px; bottom:20px; gap:10px}
-      .btn-float{padding:10px 16px; font-size:0.85rem}
-      .splash-logo-half{width:300px; height:300px}
-      .cta-row{flex-direction:column; width:100%}
-      .cta-row .btn{width:100%; text-align:center}
-      .section-title{font-size:1.8rem}
-      h1{font-size:2.2rem}
+      .gallery img{height:180px}
     }
     /* Starfield canvas sits behind page content but above the page background */
     #starfield{position:fixed;inset:0;display:block;pointer-events:none;z-index:0;width:100%;height:100%}
@@ -287,11 +260,10 @@
       border-left: 1px solid var(--line);
     }
     .splash-logo-half {
-      width: 500px; /* Maximize presence */
-      height: 500px;
+      width: 240px; /* Increased for premium impact */
+      height: 240px;
       object-fit: contain;
       pointer-events: none;
-      filter: drop-shadow(0 0 30px rgba(215,178,109,0.3));
     }
     .door-left .splash-logo-half {
       object-position: left;
@@ -323,70 +295,85 @@
       animation: cameraFlash 0.6s ease-out forwards;
     }
     body.locked { overflow: hidden; }
-
-    /* Floating CTAs */
-    .floating-ctas {
-      position: fixed;
-      right: 25px;
-      bottom: 40px;
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      pointer-events: none;
-    }
-    .floating-ctas .btn-float {
-      pointer-events: all;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #111;
-      padding: 16px 28px;
-      border-radius: 12px;
-      font-weight: 800;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: all 0.3s ease;
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    .floating-ctas.visible .btn-float {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .btn-float:hover {
-      transform: translateY(-5px) scale(1.03);
-      filter: brightness(1.1);
-    }
-    .btn-chat {
-      background: var(--card) !important;
-      color: var(--text) !important;
-      border: 1px solid var(--accent);
-    }
   </style>
 </head>
 <body class="locked">
   <div class="splash-screen" id="splash">
     <div class="splash-door door-left">
-      <img src="william_dean_logo.png" class="splash-logo-half" alt="">
+      <img src="billylogo.jpg" class="splash-logo-half" alt="">
     </div>
     <div class="splash-door door-right">
-      <img src="william_dean_logo.png" class="splash-logo-half" alt="">
+      <img src="billylogo.jpg" class="splash-logo-half" alt="">
     </div>
     <div class="camera-flash" id="flash"></div>
   </div>
   <a class="skip-link" href="#main">Skip to main content</a>
   <canvas id="starfield" aria-hidden="true"></canvas>
+  
+  <!-- Chat Window Components -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="status-dot"></div>
+        <style>
+          .status-dot { width:10px; height:10px; background:#4ade80; border-radius:50%; position:relative; box-shadow: 0 0 10px #4ade80; }
+          .status-dot::after {
+            content: ""; position: absolute; inset: -3px; border-radius: 50%;
+            border: 2px solid #4ade80; animation: dotPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          }
+          @keyframes dotPulse { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.8); opacity: 0; } }
+        </style>
+        <strong>Studio Concierge</strong>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">×</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">Welcome to William Dean Photography. I'm your Concierge. How can I help you with your Bakersfield listing visibility today?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Ask about pricing or scheduling..." onkeypress="if(event.key==='Enter') handleChatSend()">
+      <button onclick="handleChatSend()">Send</button>
+    </div>
+  </div>
+
+  <style>
+    .chat-window {
+      position: fixed; top: 75px; 
+      /* Dynamic positioning to align with the trigger on the right side of the container */
+      right: calc((100vw - min(1180px, 92vw)) / 2 + 10px);
+      width: 380px; height: 500px; 
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,.6);
+      display: none; flex-direction: column; z-index: 100;
+      backdrop-filter: blur(20px);
+    }
+    .chat-window.active { display: flex; animation: slideUp 0.3s ease-out; }
+    @keyframes slideUp { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:translateY(0); } }
+    .chat-header { padding: 16px 20px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,.03); }
+    .chat-body { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+    .msg { padding: 10px 14px; border-radius: 14px; max-width: 85%; font-size: 0.95rem; line-height: 1.4; }
+    .bot { background: rgba(255,255,255,.07); align-self: flex-start; color: var(--text); border-bottom-left-radius: 2px; }
+    .user { background: var(--accent); color: #111; align-self: flex-end; font-weight: 600; border-bottom-right-radius: 2px; }
+    .chat-footer { padding: 15px; border-top: 1px solid var(--line); display: flex; gap: 10px; }
+    .chat-footer input { flex: 1; background: rgba(0,0,0,.3); border: 1px solid var(--line); color: #fff; padding: 10px 14px; border-radius: 10px; outline: none; }
+    .chat-footer button { background: var(--accent); border: none; padding: 0 16px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+    .chat-close { background: none; border: none; color: var(--muted); font-size: 24px; cursor: pointer; }
+  </style>
+
   <header>
-    <div class="container nav">
-      <div class="brand">
-        <img src="william_dean_logo.png" alt="William Dean Photography" />
+    <div class="container nav-grid">
+      <div class="header-left">
+         <!-- Left real estate preserved for balance -->
       </div>
       <div class="header-center">
         <a class="nav-phone" href="tel:8653640099">865-364-0099</a>
-        <a class="btn btn-primary" href="tel:8653640099" style="box-shadow:0 12px 25px rgba(215,178,109,0.3); padding: 12px 24px; font-size: 1rem">Book a shoot now</a>
+        <a class="btn btn-primary" href="tel:8653640099">Book a Shoot</a>
       </div>
       <div class="header-right">
+        <button class="chat-trigger" onclick="toggleChat()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          Studio Concierge
+        </button>
       </div>
     </div>
   </header>
@@ -395,21 +382,19 @@
 
   <section class="hero">
     <picture>
-      
-          <source srcset="william_dean_logo.avif" type="image/avif">
-          <source srcset="william_dean_logo.webp" type="image/webp">
-          <img class="hero-bg" src="william_dean_logo.png" alt="William Dean Photography backdrop" loading="eager" decoding="sync" fetchpriority="high" width="1024" height="1024" aria-hidden="true" style="object-fit: cover;">
+      <img class="hero-bg" src="60e70c7a-8a69-45e9-bfed-e478c49201c7.jpg" alt="Bakersfield real estate photography - Center of attention Kern County listing" loading="eager" decoding="sync" fetchpriority="high" width="1024" height="1024" aria-hidden="true">
     </picture>
-    <div class="container" style="display:flex;justify-content:center">
+    <div class="container">
       <div class="hero-card">
-        <h1>Real Estate Photography in Bakersfield & Kern County</h1>
-        <p class="lead" style="font-weight:600; color:var(--text); margin-bottom:15px">Clean. Fast. Compliant.</p>
-        <p class="lead" style="margin-bottom:25px">
-          William Dean is a real estate photographer in Bakersfield, CA, delivering clean, market-ready photos for residential and commercial listings across Kern County. Every shoot is MLS-compliant, fast to deliver, and built for both listing platforms and social media.
+        <img src="billylogo.jpg" alt="William Dean Photography" class="hero-logo">
+        <h1>Bakersfield & Kern County Real Estate Photography</h1>
+        <p style="font-size:1.4rem;color:var(--accent);margin-top:-10px;margin-bottom:20px;font-weight:800;letter-spacing:1px">CLEAN. FAST. COMPLIANT.</p>
+        <p class="lead" style="font-weight:500;color:var(--text)">
+          Technically elite listing visuals for Bakersfield agents who demand consistency, speed, and MLS-compliant accuracy.
         </p>
         <div class="cta-row" style="justify-content:center">
-          <a class="btn btn-primary" href="tel:8653640099">Book a shoot: 865-364-0099</a>
-          <a class="btn btn-ghost" href="#portfolio">View work</a>
+          <a class="btn btn-primary" href="tel:8653640099">Book Shoot: 865-364-0099</a>
+          <a class="btn btn-ghost" href="#portfolio">View Work</a>
         </div>
       </div>
     </div>
@@ -471,100 +456,34 @@
       <p class="section-sub">Clean HDR images, sharp verticals, balanced natural/interior light, and listing visuals that are both MLS-safe and social-media effective.</p>
       <div class="gallery">
         <picture>
-          
-          <source srcset="twilight1.avif" type="image/avif">
-          <source srcset="twilight1.webp" type="image/webp">
-          <img src="twilight1.jpg" alt="William Dean Photography - twilight exterior" loading="lazy">
+          <img src="3ecd8fa8-11a5-4384-882a-7a66f2daf94e.jpg" alt="Bakersfield real estate interior photography - living room" width="2048" height="1367" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="43f0ef02-eefb-4f8f-a17c-0d54af0f1097.avif" type="image/avif">
-          <source srcset="43f0ef02-eefb-4f8f-a17c-0d54af0f1097.webp" type="image/webp">
-          <img src="43f0ef02-eefb-4f8f-a17c-0d54af0f1097.jpg" alt="Clean verticals - Real estate kitchen" loading="lazy">
+          <img src="43f0ef02-eefb-4f8f-a17c-0d54af0f1097.jpg" alt="Bakersfield real estate kitchen photo - clean verticals" width="2048" height="1367" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="599.avif" type="image/avif">
-          <source srcset="599.webp" type="image/webp">
-          <img src="599.jpg" alt="Bakersfield real estate interior" loading="lazy">
+          <img src="60e70c7a-8a69-45e9-bfed-e478c49201c7.jpg" alt="Kern County residential listing photo - master suite" width="2048" height="1535" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="60e70c7a-8a69-45e9-bfed-e478c49201c7.avif" type="image/avif">
-          <source srcset="60e70c7a-8a69-45e9-bfed-e478c49201c7.webp" type="image/webp">
-          <img src="60e70c7a-8a69-45e9-bfed-e478c49201c7.jpg" alt="Kern County residential master suite" loading="lazy">
+          <img src="a8e10692-14c7-4f17-8634-850d82c114c4.jpg" alt="Bakersfield Real Estate Photography - Entryway" width="1024" height="1536" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="600.avif" type="image/avif">
-          <source srcset="600.webp" type="image/webp">
-          <img src="600.jpg" alt="Professional real estate photography" loading="lazy">
+          <img src="b087f1f0-3d18-43ad-9169-3bb1ea134e18.jpg" alt="Bakersfield home listing photo - living space" width="1536" height="1024" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="3ecd8fa8-11a5-4384-882a-7a66f2daf94e.avif" type="image/avif">
-          <source srcset="3ecd8fa8-11a5-4384-882a-7a66f2daf94e.webp" type="image/webp">
-          <img src="3ecd8fa8-11a5-4384-882a-7a66f2daf94e.jpg" alt="Bakersfield real estate living room" loading="lazy">
+          <img src="bdae2579-a8cc-44d9-a09c-7e082cc7ddca.jpg" alt="Real estate photography - Modern Bakersfield kitchen" width="2048" height="1535" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="twlight2.avif" type="image/avif">
-          <source srcset="twlight2.webp" type="image/webp">
-          <img src="twlight2.jpg" alt="William Dean Photography - beautiful twilight" loading="lazy">
+          <img src="cfd04b7d-df76-4477-87c7-2c05c8b128f8.jpg" alt="Professional listing photo - Bakersfield CA" width="2048" height="1367" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="b087f1f0-3d18-43ad-9169-3bb1ea134e18.avif" type="image/avif">
-          <source srcset="b087f1f0-3d18-43ad-9169-3bb1ea134e18.webp" type="image/webp">
-          <img src="b087f1f0-3d18-43ad-9169-3bb1ea134e18.jpg" alt="Bakersfield home living space" loading="lazy">
+          <img src="e3983ca3-d30b-49b0-9b80-4559aa1f984c.jpg" alt="Real estate photo - Kern County" width="1536" height="1024" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="601.avif" type="image/avif">
-          <source srcset="601.webp" type="image/webp">
-          <img src="601.jpg" alt="Bakersfield real estate interior" loading="lazy">
+          <img src="ec8cc0e9-74b8-49ff-a569-f397f836a75d.jpg" alt="Bakersfield residential interior photo" width="1536" height="1024" loading="lazy" decoding="async">
         </picture>
         <picture>
-          
-          <source srcset="bdae2579-a8cc-44d9-a09c-7e082cc7ddca.avif" type="image/avif">
-          <source srcset="bdae2579-a8cc-44d9-a09c-7e082cc7ddca.webp" type="image/webp">
-          <img src="bdae2579-a8cc-44d9-a09c-7e082cc7ddca.jpg" alt="Modern Bakersfield kitchen" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="602.avif" type="image/avif">
-          <source srcset="602.webp" type="image/webp">
-          <img src="602.jpg" alt="Professional listing photo" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="cfd04b7d-df76-4477-87c7-2c05c8b128f8.avif" type="image/avif">
-          <source srcset="cfd04b7d-df76-4477-87c7-2c05c8b128f8.webp" type="image/webp">
-          <img src="cfd04b7d-df76-4477-87c7-2c05c8b128f8.jpg" alt="Bakersfield professional real estate" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="603.avif" type="image/avif">
-          <source srcset="603.webp" type="image/webp">
-          <img src="603.jpg" alt="Kern County home photography" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="e3983ca3-d30b-49b0-9b80-4559aa1f984c.avif" type="image/avif">
-          <source srcset="e3983ca3-d30b-49b0-9b80-4559aa1f984c.webp" type="image/webp">
-          <img src="e3983ca3-d30b-49b0-9b80-4559aa1f984c.jpg" alt="Real estate photo Kern County" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="604.avif" type="image/avif">
-          <source srcset="604.webp" type="image/webp">
-          <img src="604.jpg" alt="Bakersfield interior photography" loading="lazy">
-        </picture>
-        <picture>
-          
-          <source srcset="ec8cc0e9-74b8-49ff-a569-f397f836a75d.avif" type="image/avif">
-          <source srcset="ec8cc0e9-74b8-49ff-a569-f397f836a75d.webp" type="image/webp">
-          <img src="ec8cc0e9-74b8-49ff-a569-f397f836a75d.jpg" alt="Residential interior photo" loading="lazy">
+          <img src="0a6d04f0-34b1-489e-8088-62b0c1246e34.jpg" alt="Real estate photography Bakersfield - dining area" width="2048" height="1367" loading="lazy" decoding="async">
         </picture>
       </div>
 
@@ -587,41 +506,20 @@
 
   <section>
     <div class="container">
-      <h2 class="section-title">Services & Architecture</h2>
+      <h2 class="section-title">Services & Workflow</h2>
       <div class="process">
         <div class="card">
-          <h3>Residential Listing Photography</h3>
-          <p>Full residential photo coverage for Bakersfield and Kern County listings. Clean HDR capture, straight verticals, and accurate color designed for MLS, Zillow, Redfin, and brokerage sites. Ideal for single-family homes, condos, and townhomes. <strong>Most Bakersfield listing shoots fall between $175–$350.</strong></p>
+          <h3>1) Core Photo Coverage</h3>
+          <p>Full residential and commercial real estate photography for Bakersfield and Kern County listings. Clean HDR capture, straight verticals, and accurate color designed for MLS, Zillow, Redfin, and brokerage sites. <strong>Most Bakersfield listing shoots fall between $175–$350.</strong></p>
         </div>
         <div class="card">
-          <h3>Commercial Real Estate Photography</h3>
-          <p>Expert visuals for small-to-midsize commercial properties, retail spaces, and offices. We focus on scale, architectural detail, and usage context that helps commercial brokers close faster in the Kern County market.</p>
+          <h3>2) Marketing Add-Ons</h3>
+          <p>Twilight edits, twilight-style marketing images, AI staging, and AI walk-through videos that stand out in Bakersfield’s competitive feeds. These assets are built to perform on Instagram, Facebook, and agent branding campaigns while staying grounded in the true character of the property.</p>
         </div>
         <div class="card">
-          <h3>Twilight & AI Add-Ons</h3>
-          <p>Twilight edits, AI staging, and AI walk-through videos that stand out in Bakersfield’s competitive real estate feeds. These assets are built to perform on Instagram and agent branding campaigns while staying grounded in the character of the property.</p>
+          <h3>3) Fast Turnaround, Zero Friction</h3>
+          <p>Bakersfield listing shoots are scheduled within a few days, with delivery in 24hr hours. Call/text 865-364-0099, schedule, shoot, and receive polished, MLS-ready assets via online gallery without the back-and-forth drama.</p>
         </div>
-      </div>
-      <div style="margin-top:40px; padding:30px; background:rgba(255,255,255,.03); border:1px solid var(--line); border-radius:18px">
-        <h3 style="margin:0 0 15px; color:var(--accent)">Serving Bakersfield & Greater Kern County</h3>
-        <p style="margin:0; line-height:1.7; color:var(--muted)">
-          William Dean Photography provides dedicated real estate photography services to: <strong>Bakersfield, Oildale, Rosedale, Northwest Bakersfield, Southwest Bakersfield, East Bakersfield, Shafter, Wasco, Delano,</strong> and surrounding Kern County communities.
-        </p>
-      </div>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px; margin-top: 40px;">
-        <picture>
-          
-          <source srcset="twilight1.avif" type="image/avif">
-          <source srcset="twilight1.webp" type="image/webp">
-          <img src="twilight1.jpg" alt="Bakersfield real estate twilight photography" style="width: 100%; height: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 18px; border: 1px solid var(--line); display: block;">
-        </picture>
-        <picture>
-          
-          <source srcset="twlight2.avif" type="image/avif">
-          <source srcset="twlight2.webp" type="image/webp">
-          <img src="twlight2.jpg" alt="Kern County architecture twilight edit" style="width: 100%; height: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 18px; border: 1px solid var(--line); display: block;">
-        </picture>
       </div>
     </div>
   </section>
@@ -667,8 +565,7 @@
 
   <footer>
     <div class="container">
-      <div>© William Dean Photography — Clean. Fast. Compliant. | 📍 Bakersfield, CA | Call/Text: <a href="tel:8653640099">865-364-0099</a> | Instagram: <a href="https://instagram.com/williamdeanrealphotography" target="_blank" rel="noopener">@williamdeanrealphotography</a></div>
-      <div style="margin-top:12px;font-size:0.75rem;opacity:0.5;letter-spacing:0.5px">Powered by <a href="https://chaoticallyorganizedai.com/" target="_blank" style="text-decoration:underline">ChaoticallyOrganizedAI.com</a></div>
+      © William Dean Photography — Clean. Fast. Compliant. | 📍 Bakersfield, CA | Call/Text: <a href="tel:8653640099">865-364-0099</a> | Instagram: <a href="https://instagram.com/williamdeanrealphotography" target="_blank" rel="noopener">@williamdeanrealphotography</a>
     </div>
   </footer>
 
@@ -796,8 +693,6 @@
       else window.addEventListener('load', scheduleStart, {once:true});
     })();
   </script>
-
-
     <script>
       // Accessibility & performance helpers
       (function(){
@@ -839,6 +734,53 @@
       gtag('config', 'MEASUREMENT_ID');
     </script>
     <script>
+      // Chat system logic
+      function toggleChat() {
+        const win = document.getElementById('chatWindow');
+        win.classList.toggle('active');
+        if(win.classList.contains('active')) {
+          document.getElementById('chatInput').focus();
+        }
+      }
+
+      function handleChatSend() {
+        const input = document.getElementById('chatInput');
+        const body = document.getElementById('chatBody');
+        const text = input.value.trim();
+        if(!text) return;
+
+        // User message
+        const userMsg = document.createElement('div');
+        userMsg.className = 'msg user';
+        userMsg.textContent = text;
+        body.appendChild(userMsg);
+        input.value = '';
+        body.scrollTop = body.scrollHeight;
+
+        // Bot response
+        setTimeout(() => {
+          const botMsg = document.createElement('div');
+          botMsg.className = 'msg bot';
+          botMsg.textContent = getBotResponse(text);
+          body.appendChild(botMsg);
+          body.scrollTop = body.scrollHeight;
+        }, 600);
+      }
+
+      function getBotResponse(input) {
+        const low = input.toLowerCase();
+        if(low.includes('price') || low.includes('cost') || low.includes('how much')) {
+          return "Most Bakersfield residential shoots range from $175 to $350 depending on square footage and add-ons like twilight or AI staging. Would you like a precise quote?";
+        }
+        if(low.includes('schedul') || low.includes('book') || low.includes('when')) {
+          return "I can typically get you on the Bakersfield schedule within 48 hours. Delivery is guaranteed within 24 hours of the shoot. What day are you looking at?";
+        }
+        if(low.includes('area') || low.includes('kern') || low.includes('serve')) {
+          return "William serves all of Bakersfield and Kern County, including Rosedale, Shafter, Wasco, and Tehachapi. No travel fees within the Bakersfield metro area.";
+        }
+        return "I'm the Studio Concierge. I can help with pricing, scheduling, or service areas for your Bakersfield listings. What can I clarify for you?";
+      }
+
       // Splash Screen Logic
       (function(){
         const splash = document.getElementById('splash');
@@ -846,17 +788,11 @@
         const body = document.body;
 
         function triggerSplash(){
-          // Initial delay for the user to see the logo
           setTimeout(() => {
-            // Start the flash
             flash.classList.add('flash-animate');
-            
-            // At the peak of the flash (approx 60ms in), open the doors
             setTimeout(() => {
               splash.classList.add('active');
               body.classList.remove('locked');
-              
-              // Remove splash from DOM after animation completes
               setTimeout(() => {
                 splash.style.display = 'none';
               }, 800);
@@ -864,71 +800,9 @@
           }, 1200);
         }
 
-        const fallback = setTimeout(triggerSplash, 3500); // 3.5s max wait
-        if (document.readyState === 'complete') {
-          clearTimeout(fallback);
-          triggerSplash();
-        } else {
-          window.addEventListener('load', () => { clearTimeout(fallback); triggerSplash(); });
-          document.addEventListener('DOMContentLoaded', () => { /* maybe wait for load if images are critical */ });
-        }
-        // Logo auto-scaling based on scroll
-        const headerLogo = document.querySelector('.brand img');
-        const floatingCTAs = document.querySelector('.floating-ctas');
-        
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) {
-            headerLogo.style.height = '75px';
-            document.querySelector('header').style.padding = '5px 0';
-            floatingCTAs.classList.add('visible');
-          } else {
-            headerLogo.style.height = '140px';
-            document.querySelector('header').style.padding = '0';
-            floatingCTAs.classList.remove('visible');
-          }
-        }, {passive:true});
+        if (document.readyState === 'complete') triggerSplash();
+        else window.addEventListener('load', triggerSplash);
       })();
     </script>
-    <div class="floating-ctas">
-      <a href="tel:8653640099" class="btn-float">
-        <span>Book a shoot now</span>
-      </a>
-    </div>
-
-    <!-- Desktop Booking Modal -->
-    <div id="bookingModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:9999; align-items:center; justify-content:center; backdrop-filter:blur(5px);">
-      <div style="background:var(--card); padding:40px; border-radius:18px; border:1px solid var(--accent); width:90%; max-width:500px; text-align:center; position:relative;">
-        <span onclick="document.getElementById('bookingModal').style.display='none'" style="position:absolute; right:20px; top:15px; font-size:1.5rem; cursor:pointer; color:var(--muted); transition:0.2s;">&times;</span>
-        <h2 style="margin:0 0 15px; color:var(--text);">Book Your Shoot</h2>
-        <p style="color:var(--muted); margin-bottom:25px; line-height:1.6;">Secure your slot instantly. Continue to our scheduling portal or call us directly.</p>
-        <a href="https://calendly.com/your-calendly/book-william" target="_blank" class="btn btn-primary" style="width:100%; display:block; margin-bottom:15px;">Continue to Booking Portal</a>
-        <p style="font-size:0.9rem; color:var(--muted); margin:0;">Or text/call: <span style="color:var(--accent); font-weight:700;">865-364-0099</span></p>
-      </div>
-    </div>
-    <script>
-      // Smart Desktop CTA routing
-      document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-          // Only intercept if we're on a wider desktop display (not mobile/tablet natively using dialer)
-          if(window.innerWidth > 980) {
-            e.preventDefault();
-            document.getElementById('bookingModal').style.display = 'flex';
-          }
-        });
-      });
-    </script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/69cdab124cdcf71c377f4c8b/1jl5m8g7j';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 </body>
 </html>
